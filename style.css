@@ -154,7 +154,6 @@ body {
 }
 
 .logo {
-    margin-top :5px;
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -1px;
@@ -184,6 +183,24 @@ body {
     transition: 0.3s;
 }
 
+.hero {
+    /* Adjust '80px' to match the actual height of your navbar */
+    padding-top: 100px; 
+    display: flex;
+    align-items: center; /* This keeps content centered vertically */
+    min-height: 100vh;
+}
+
+/* Mobile Tweak: If your Navbar gets taller on small screens */
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 120px; 
+    }
+    
+    .hero-content h1 {
+        margin-top: 20px; /* Extra breathing room for the 'Satisfy' text */
+    }
+}
 /* Hero Section */
 .hero {
     position: relative;
