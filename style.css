@@ -25,6 +25,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* --- Desktop Navbar --- */
 .navbar {
     position: fixed;
@@ -153,6 +154,7 @@ body {
 }
 
 .logo {
+    margin-top :5px;
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: -1px;
