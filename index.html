@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtra Plate | Premium Eatery & Grill</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Xtra<span>Plate</span></div>
+        
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="tel:+2348000000000" class="nav-cta-btn">Order Now</a></li>
+        </ul>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+<div class="sidebar" id="sidebar">
+    <div class="close-menu" onclick="toggleMenu()">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+    <ul class="sidebar-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#menu" onclick="toggleMenu()">Menu</a></li>
+        <li><a href="#about" onclick="toggleMenu()">Our Story</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><a href="https://wa.me/yournumber" class="sidebar-cta">Order on WhatsApp</a></li>
+    </ul>
+</div>
+
+<div class="sidebar-overlay" id="overlay" onclick="toggleMenu()"></div>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content">
+            <div class="badge">
+                <i class="fa-solid fa-certificate"></i> Premium Quality Guaranteed
+            </div>
+            
+            <h1>Satisfy Your Craving <br> With An <span class="highlight">Xtra</span> Touch.</h1>
+            
+            <p>From smokey signature grills to authentic local favorites, we serve more than just a meal—we serve an experience. Fresh, hot, and delivered to your doorstep.</p>
+            
+            <div class="hero-actions">
+                <a href="https://wa.me/2348000000000" class="btn btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+                </a>
+                <a href="#menu" class="btn btn-secondary">
+                    Browse Full Menu
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>30min Delivery</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>100% Fresh</span>
+                </div>
+                <div class="stat-item">
+                    <i class="fa-solid fa-star"></i>
+                    <span>4.8 Rating</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-title">
+                <span class="sub-heading">Fresh From Our Kitchen</span>
+                <h2>Our Signature <span class="highlight">Plates</span></h2>
+                <div class="title-line"></div>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=500&auto=format&fit=crop" alt="Special Jollof">
+                        <div class="price-tag">₦4,500</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Smokey Party Jollof</h3>
+                        <p>Rich, firewood-flavored rice served with fried plantain, salad, and choice of protein.</p>
+                        <a href="https://wa.me/yournumber?text=I%20want%20to%20order%20the%20Smokey%20Jollof" class="add-to-cart">
+                            <i class="fa-solid fa-plus"></i> Add to Order
+                        </a>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?q=80&w=500&auto=format&fit=crop" alt="Grilled Chicken">
+                        <div class="price-tag">₦3,800</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Xtra Grilled Chicken</h3>
+                        <p>Quarter chicken marinated in our secret house spices and flame-grilled to perfection.</p>
+                        <a href="#" class="add-to-cart">
+                            <i class="fa-solid fa-plus"></i> Add to Order
+                        </a>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=500&auto=format&fit=crop" alt="Native Soup">
+                        <div class="price-tag">₦5,200</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fisherman's Soup</h3>
+                        <p>Fresh seafood medley in a rich, spicy broth. Best paired with Pounded Yam or Eba.</p>
+                        <a href="#" class="add-to-cart">
+                            <i class="fa-solid fa-plus"></i> Add to Order
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-footer">
+                <a href="#" class="btn-full-menu">View Full Menu (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container about-grid">
+            <div class="about-image">
+                <div class="image-stack">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=800&auto=format&fit=crop" alt="Our Kitchen" class="main-img">
+                    <div class="experience-badge">
+                        <span class="years">10+</span>
+                        <span class="exp-text">Years of <br>Flavor</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-text">
+                <span class="sub-heading">The Xtra Plate Story</span>
+                <h2>Bringing <span class="highlight">Extra</span> Heart to Every Meal</h2>
+                <p>Founded on the belief that good food should be abundant, flavorful, and accessible. At Xtra Plate, we don't just cook; we craft experiences that remind you of home, with a professional touch that keeps you coming back.</p>
+                
+                <div class="features-list">
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-shrimp"></i></div>
+                        <div class="feature-info">
+                            <h4>Fresh Ingredients</h4>
+                            <p>Sourced daily from local farmers to ensure peak flavor.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-mitten"></i></div>
+                        <div class="feature-info">
+                            <h4>Hygienic Kitchen</h4>
+                            <p>Standardized safety protocols in every step of preparation.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+                        <div class="feature-info">
+                            <h4>Bulk Orders</h4>
+                            <p>Catering for your events, offices, and large gatherings.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="tel:+2348000000000" class="btn btn-secondary about-cta">
+                    Learn More About Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">Xtra<span>Plate</span></div>
+                <p>Premium dining and 24/7 delivery. Experience the Xtra factor in Tanke and Ga-Akanbi.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+           <div class="footer-map">
+    <h4>Our Locations</h4>
+    
+    <div class="map-tabs">
+        <button class="map-btn active" onclick="switchMap('tanke')">Tanke (HQ)</button>
+        <button class="map-btn" onclick="switchMap('ga-akanbi')">Ga-Akanbi</button>
+    </div>
+
+    <div class="map-wrapper">
+        <iframe id="map-tanke" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.895318536838!2d4.588824175782782!3d8.510619896796245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10364db3340b0573%3A0x12660679dee8d8ce!2sXtra%20Plate%20Xquisite%20Eatery%20(247)!5e0!3m2!1sen!2sng!4v1715432000000!5m2!1sen!2sng" 
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <iframe id="map-ga-akanbi" class="hidden"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.034567891234!2d4.576543210987654!3d8.487654321098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10364d2e9e8f7a6b%3A0xabcdef12345678!2sGa%20Akanbi%20Area%2C%20Ilorin!5e0!3m2!1sen!2sng!4v1715433000000!5m2!1sen!2sng" 
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</div>
+
+            <div class="footer-branches">
+                <h4>Our Locations</h4>
+                <div class="branch-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Tanke Branch</strong>
+                        <p>University Rd, Opp. Klub Rush, Ilorin.</p>
+                    </div>
+                </div>
+                <div class="branch-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Ga-Akanbi Branch</strong>
+                        <p>Ga-Akanbi Area, Ilorin, Kwara State.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Xtra Plate. Built for Growth.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"> </script>
+</body>
+</html>
